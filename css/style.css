@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+::selection{
+    background-color: rgba(79, 191, 48, 0.379);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;}
+.main{
+    font-family: 'Fuzzy Bubbles', cursive;
+   
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(2, 0, 0, .6),rgba(2, 0, 0,.6 ));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: absolute;
+    top: 0;
+     left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.header{
+    position: relative;
+    color: aliceblue;
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.3)),url(../images/bgv.mp4);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes first{
+    0%{
+       transform: translatey(-500px);
+    }
+    
+   
+    }
+.header img{
+    animation: first 8s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid rgb(27, 53, 223);
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+.header h3{
+    font-size: 40px;
+    animation: first 6s;
+}
+.header p{
+    text-align: center;
+    word-spacing: 1px ;
+    letter-spacing: 3px;
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+    line-height: 35px;
+    animation: first 4s;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    list-style: none;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    animation: first 2s;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    background-color: rgba(41, 80, 2, 0.453);
+    margin: 10px;
+    border-radius: 50px;
+    text-align: center;
+}
+.navbar ul li{
+    margin-top: 50px;
+    
+    
+}
+.navbar ul li a:hover{
+    transition: 4s;
+    text-decoration: 2px underline;
+    text-decoration-color: rgb(0, 0, 0);
+    animation: ss 3s;
+    
+  
+}
+
+@keyframes ss{
+    0%{
+      
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+
+    }
+}
+
+
+
+
+
+.contact{
+    background: linear-gradient(rgba(255, 255, 255, 0.058),rgba(218, 218, 218, 0.014)),url(../images/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+   
+}
+.sociallinks{
+    font-size: 30px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.contact h3{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+.contact p{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.contactbox{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(162, 101, 101);
+    overflow: hidden;
+    transition: 1s;
+    padding: 20px;
+    border: 2px solid rgb(2, 44, 96);
+    transform-origin: bottom;
+    
+    
+}
+.contact p span{
+    color: black;
+    font-weight: bold;
+}
+.contactbox:hover{
+    transform-origin: bottom;
+    background-color: rgba(250, 250, 250, 0.323);
+    width: 500px;
+    height: 500px;
+    transition: 1s;
+    border: 2px solid rgb(14, 0, 105);
+    
+}
